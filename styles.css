@@ -39,6 +39,10 @@
     font-size: 12px !important;
     font-family: luci !important;
   }
+
+  .post img{
+    width: 100% !important;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -624,6 +628,6 @@ button:active {
 }
 
 .post img {
-  max-width: 300px;
+  width: 250px;
   pointer-events: none;
 }
