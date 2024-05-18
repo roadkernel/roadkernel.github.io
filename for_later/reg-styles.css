@@ -1,0 +1,104 @@
+body{
+    background-color: transparent;
+}
+
+.registration-form {
+    display: none;
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(50,62,62);
+}
+
+.login-widget {
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 400px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+
+
+textarea {
+    resize: none;
+}
+
+.success-widget {
+    display: none;
+    text-align: center;
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* LOGIN FORM */
+
+.login-form {
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(50,62,62);
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    justify-content: center;
+    margin: 0 auto 10px; /* Centering using margin */
+
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+
+  #toggle-form-btn, #toggle-form-btn2{
+    margin-bottom: 10px;
+}
+
+#toggle-form-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #toggle-form-btn:hover {
+    background-color: #45a049;
+  }
+  

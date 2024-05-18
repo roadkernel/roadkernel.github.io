@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Application Form</title>
+<link rel="stylesheet" href="reg-styles.css">
+</head>
+<body>
+    <div class="login-form">
+        <input type="text" id="login" placeholder="Login">
+        <input type="password" id="password" placeholder="Password">
+        <button id="toggle-form-btn">Switch to Registration Form</button>
+        <button id="login-btn">Login</button>
+      </div>      
+<div class="registration-form">
+    <div class="login-widget">
+        <input type="text" id="preferred-login" placeholder="Preferred login">
+        <input type="text" id="contact" placeholder="Telegram or Email or PGP Key (optional)">
+        <input type="text" placeholder="Who are you and why are you applying (optional)" id="why"></input>
+        <button id="toggle-form-btn2">Switch to Login Form</button>
+        <button id="register-btn">Submit</button>
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="user-reg.js"></script>
+</html>
