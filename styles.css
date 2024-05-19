@@ -44,7 +44,8 @@
     width: 100% !important;
   }
   .feed-window{
-    width: 93% !important;
+    width: 80% !important;
+    margin: 0 auto !important;
   }
 }
 
@@ -605,7 +606,8 @@ button:active {
   position: fixed;
   text-align: center;
   top: 10px;
-  left: 5%;
+  /* left: 5%; */
+  margin: 0 auto !important;
   width: 60%;
   height: 600px;
   z-index: 999;
