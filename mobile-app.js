@@ -523,7 +523,7 @@ document.getElementById("Feed").style.display = "block";
 var images = ["shikib.png", "rb.png", "sunakobC.png", "duob.png", "mainb.png"];
 var currentIndex = 0;
 
-$("#changeBackground").on("tap", function () {
+$("#changeBackground").click(function () {
   $("body").css(
     "background-image",
     "url(pics/wallpaper/" + images[currentIndex] + ")"
