@@ -139,7 +139,7 @@ body.loaded #loading-animation {
   position: absolute;
   top: 30px;
   left: 30px;
-  overflow: hidden !important;
+  z-index: 1;
 }
 
 .noteswindow {
@@ -234,6 +234,7 @@ button:active {
   cursor: pointer;
   margin: 10px;
   color: white;
+  z-index: 2;
 }
 
 .icon img {
