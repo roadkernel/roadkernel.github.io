@@ -25,6 +25,7 @@ $(document).ready(function () {
   });
 
   var songs = [
+    { name: "If We Being Real", path: "music/yeat.mp3" },
     { name: "NO DIDDY", path: "music/diddy.mp3" },
     { name: "Кожура", path: "music/kojura.mp3" },
     { name: "simswap", path: "music/simswap.mp3" },
