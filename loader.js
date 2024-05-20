@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    // Function to fade in and out the loading animation
     function fadeLoadingAnimation() {
       $('#loading-animation').fadeIn(100, function() {
         $(this).fadeOut(1000, function() {
@@ -9,12 +8,11 @@ $(document).ready(function() {
       });
     }
 
-    // Function to add Lorem Ipsum text dynamically
     function addLoremIpsumText() {
       // var loremIpsum1 = "Welcome, User! I Hope you stay.";
       var loremIpsum2 = "is NOT built for mobile devices!";
       var loremIpsum3 = "JS reads your User-Agent.";
-      var loremIpsum4 = "Some Apps are disabled.";
+      var loremIpsum4 = "Have a nice day.";
 
       // Insert Lorem Ipsum text letter by letter
       // insertTextLetterByLetter('#loading-text', loremIpsum1);
@@ -33,13 +31,13 @@ $(document).ready(function() {
         } else {
           clearInterval(interval);
         }
-      }, 50); // Adjust the interval for typing speed
+      }, 50); // Adjust the interval for typing speed DO NOT CHANGE DO NOT CHANGE DO NOT CHANGE
     }
 
 
     setTimeout(function() {
       $('#no-phones-svg').fadeIn(500);
-    }, 3000); // Задержка в 1 секунду перед появлением SVG
+    }, 3000); // I fucking hate this
 
     // Call the functions after a certain delay
     setTimeout(addLoremIpsumText, 2000); // Add Lorem Ipsum text after 2 seconds

@@ -1,5 +1,20 @@
+/*
+██╗    ██╗  ██╗ █████╗ ████████╗███████╗                             
+██║    ██║  ██║██╔══██╗╚══██╔══╝██╔════╝                             
+██║    ███████║███████║   ██║   █████╗                               
+██║    ██╔══██║██╔══██║   ██║   ██╔══╝                               
+██║    ██║  ██║██║  ██║   ██║   ███████╗                             
+╚═╝    ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝                             
+                                                                     
+███╗   ███╗██╗   ██╗███████╗███████╗██╗     ███████╗      ██╗██████╗ 
+████╗ ████║╚██╗ ██╔╝██╔════╝██╔════╝██║     ██╔════╝     ██╔╝╚════██╗
+██╔████╔██║ ╚████╔╝ ███████╗█████╗  ██║     █████╗      ██╔╝  █████╔╝
+██║╚██╔╝██║  ╚██╔╝  ╚════██║██╔══╝  ██║     ██╔══╝      ╚██╗  ╚═══██╗
+██║ ╚═╝ ██║   ██║   ███████║███████╗███████╗██║          ╚██╗██████╔╝
+╚═╝     ╚═╝   ╚═╝   ╚══════╝╚══════╝╚══════╝╚═╝           ╚═╝╚═════╝ 
+                                                                     */
+
 $(document).ready(function () {
-  //player
 
   $("#player").click(function () {
     $(".music-player").fadeIn();
@@ -34,7 +49,7 @@ $(document).ready(function () {
 
   $(document).ready(function () {
     audio.src = songs[currentSongIndex].path;
-    updateSongIndicator(); // Call the function to display the initial song name
+    updateSongIndicator(); 
   });
 
   var currentSongIndex = 0;
@@ -43,7 +58,7 @@ $(document).ready(function () {
   $("#skip").click(function () {
     currentSongIndex = (currentSongIndex + 1) % songs.length;
     audio.src = songs[currentSongIndex].path;
-    updateSongIndicator(); // Add this line to update the song name
+    updateSongIndicator(); 
     audio.play();
   });
   function updateSongIndicator() {
@@ -55,9 +70,7 @@ $(document).ready(function () {
   $("#player").removeClass("active");
   });
 });
-//player end
 
-//popup
 
 $("#app1").on("dblclick", function () {
   $("#popupfamily").fadeIn();
@@ -70,7 +83,7 @@ $("#closeBtn").on("click", function () {
 $(".draggable").draggable({
   handle: ".bar",
   start: function () {
-    $(this).addClass("dragZ"); // Add the dragZ class to the element
+    $(this).addClass("dragZ"); 
     $(this).css({
       transform: "none",
       top: $(this).offset().top + "px",
@@ -79,9 +92,7 @@ $(".draggable").draggable({
   },
 });
 
-// $("#app4").dblclick(function(){
-//   location.reload();
-// });
+
 $("#app4").dblclick(function () {
   $(".music-player").fadeOut();
   $("#popupfamily").fadeOut();
@@ -95,7 +106,7 @@ $("#app4").dblclick(function () {
   $(".updates").fadeOut();
   $(".feed").removeClass("active");
   $(".feed-window").fadeOut();
-  $(".icon").css({ top: 0, left: 0 }); // Reset all icons to default position
+  $(".icon").css({ top: 0, left: 0 }); 
 });
 
 $("#app3").on("dblclick", function () {
@@ -114,34 +125,24 @@ $("#close-up-ui").on("click", function () {
   $(".updates").fadeOut();
 });
 
-// $("#app4").dblclick(function(){
-// location.reload();
-// });
 
-//popupend
-
-//time
 function updateUTCTime() {
   var now = new Date();
-  var hours = ('0' + now.getUTCHours()).slice(-2); // Get hours with leading zero
-  var minutes = ('0' + now.getUTCMinutes()).slice(-2); // Get minutes with leading zero
+  var hours = ('0' + now.getUTCHours()).slice(-2); 
+  var minutes = ('0' + now.getUTCMinutes()).slice(-2); 
   var timeString = hours + ':' + minutes;
   $("#utc-time").text(timeString);
 }
 
 setInterval(updateUTCTime, 1000);
-//time end
 
-//start bmenu
 
 $(".start").on("click", function () {
   $("#start-window").toggle();
   $(this).toggleClass("active");
 });
 
-//start bmenu end
 
-//start-retard
 $(".test-retard").on("click", function () {
   var randomPercentage = Math.floor(Math.random() * 101);
   $("#retard-level").text(randomPercentage);
@@ -168,9 +169,9 @@ $("#close-feed").on("click", function () {
   $(".feed-window").fadeOut();
 });
 
-//end retard
 
-//mspaint
+
+
 $(".game").on("click", function () {
   $("#tpopup").fadeIn();
   $(this).addClass("active");
@@ -181,7 +182,7 @@ $("#close-btn2").on("click", function () {
   $(".game").removeClass("active");
 });
 
-let mode = ''; // Variable to store the current mode (draw or erase)
+let mode = ''; 
 let isDrawing = false;
 let lastX = 0;
 let lastY = 0;
@@ -199,12 +200,12 @@ document.getElementById('erase-btn').addEventListener('click', function() {
 
 document.getElementById('clear-btn').addEventListener('click', function() {
     mode = '';
-    // Clear the canvas
+
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 });
 
 canvas.addEventListener('mousedown', function(e) {
-  if (e.button === 0) { // Check if left mouse button is clicked
+  if (e.button === 0) { 
       isDrawing = true;
       lastX = e.offsetX;
       lastY = e.offsetY;
@@ -222,7 +223,7 @@ canvas.addEventListener('mousemove', function(e) {
           lastX = e.offsetX;
           lastY = e.offsetY;
       } else if (mode === 'erase') {
-          ctx.clearRect(e.offsetX, e.offsetY, 30, 30); // Adjust the size for erasing
+          ctx.clearRect(e.offsetX, e.offsetY, 30, 30); 
       } else {
       }
   }
@@ -232,9 +233,9 @@ canvas.addEventListener('mousemove', function(e) {
 canvas.addEventListener('mouseup', function() {
     isDrawing = false;
 });
-///mspaint end
 
-//bgchange
+
+
  var images = ["shikib.png", "rb.png", "sunakobC.png", "duob.png", "mainb.png"];
  var currentIndex = 0;
 
@@ -245,12 +246,10 @@ canvas.addEventListener('mouseup', function() {
    );
    currentIndex = (currentIndex + 1) % images.length;
  });
-//bgchange end
 
 
-// document.getElementById("formattingBtn").addEventListener("click", function () {
-//   window.open("txt/formats.txt", "_blank");
-// });
+
+
 
 $(document).ready(function () {
   $("#redirectButton").on("click", function () {
@@ -258,10 +257,10 @@ $(document).ready(function () {
   });
 });
 
-// });
 
 
-// terminal start
+
+
 
 $("#app2").on("dblclick", function () {
   $(".conwin").fadeIn();
@@ -311,7 +310,6 @@ function displayNextLine() {
 
 displayNextLine();
 
-//terminal end
 
 
 $( function() {
@@ -322,7 +320,7 @@ $( function() {
 
 $(document).ready(function() {
   $.getJSON("shitpost.json", function(data) {
-      data.forEach(function(post) { //<div>Posted by: ${post.author}</div>
+      data.forEach(function(post) { 
           var postElement = `
               <div class="post">
                   
@@ -335,6 +333,26 @@ $(document).ready(function() {
       });
   });
 });
+
+// ЕБАТЬ КАК ОНО НА СОПЛЯХ РАБОТАЕТ ХАХАХА
+
+$(document).ready(function() {
+  $("#feedContainer").on("click", ".post img", function() {
+      $(".expanded").remove(); // Удаляем существующий клон, если он есть
+      var $clone = $(this).clone().addClass("expanded");
+      $("#Feed, #HOA").css("overflow", "hidden");
+      $("body").append($clone);
+  });
+
+  $(document).on("click", function(event) {
+      if (!$(event.target).closest(".post img").length) {
+        $("#Feed, #HOA").css("overflow", "auto");
+          $(".expanded").remove();
+      }
+  });
+});
+
+// НЕ ТРОГАТЬ КОД СВЕРХУ ОН БЛЯ РЕАЛЬНО НА СОПЛЯХ РАБОТАЕТ
 
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
@@ -350,5 +368,5 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 
-// Set the default tab to open
+
 document.getElementById("Feed").style.display = "block";
