@@ -8,14 +8,15 @@ $(document).ready(function() {
       });
     }
 
+
     function addLoremIpsumText() {
-      // var loremIpsum1 = "Welcome, User! I Hope you stay.";
+       var loremIpsum1 = "EGIRL.DEV";
       var loremIpsum2 = "is NOT built for mobile devices!";
       var loremIpsum3 = "JS reads your User-Agent.";
       var loremIpsum4 = "Have a nice day.";
 
       // Insert Lorem Ipsum text letter by letter
-      // insertTextLetterByLetter('#loading-text', loremIpsum1);
+      insertTextLetterByLetter('#loading-text-1', loremIpsum1);
       insertTextLetterByLetter('#loading-text-2', loremIpsum2);
       insertTextLetterByLetter('#loading-text-3', loremIpsum3);
       insertTextLetterByLetter('#loading-text-4', loremIpsum4);
@@ -47,4 +48,12 @@ $(document).ready(function() {
 
   $(document).ready(function() {
     $("#fadeinout").fadeIn(2000).delay(6000).fadeOut(1000);
+});
+
+$(document).ready(function() {
+  setTimeout(function() {
+    $('#LogoLoad').fadeOut(1000, function() {
+      $(this).attr('src', 'loader-logo/new-logo-stk.png').fadeIn(1000);
+    });
+  }, 5000);
 });
