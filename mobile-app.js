@@ -352,6 +352,9 @@ function openTab(evt, tabName) {
 
 document.getElementById("Feed").style.display = "block";
 
+// THIS SHIT GOES TO THE END OR IT MIGHT BREAK ALL THE SHIT
+// THIS SHIT GOES TO THE END OR IT MIGHT BREAK ALL THE SHIT
+// THIS SHIT GOES TO THE END OR IT MIGHT BREAK ALL THE SHIT
 $(".draggable").draggable({
   handle: ".bar",
   start: function () {
@@ -363,3 +366,6 @@ $(".draggable").draggable({
     }); //I stole this sorry <3
   },
 });
+// THIS SHIT GOES TO THE END OR IT MIGHT BREAK ALL THE SHIT
+// THIS SHIT GOES TO THE END OR IT MIGHT BREAK ALL THE SHIT
+// THIS SHIT GOES TO THE END OR IT MIGHT BREAK ALL THE SHIT

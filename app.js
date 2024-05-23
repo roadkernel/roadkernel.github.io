@@ -370,3 +370,21 @@ function openTab(evt, tabName) {
 
 
 document.getElementById("Feed").style.display = "block";
+
+// THIS SHIT GOES TO THE END OR IT MIGHT BREAK ALL THE SHIT
+// THIS SHIT GOES TO THE END OR IT MIGHT BREAK ALL THE SHIT
+// THIS SHIT GOES TO THE END OR IT MIGHT BREAK ALL THE SHIT
+$(".draggable").draggable({
+  handle: ".bar",
+  start: function () {
+    $(this).addClass("dragZ"); 
+    $(this).css({
+      transform: "none",
+      top: $(this).offset().top + "px",
+      left: $(this).offset().left + "px",
+    }); //I stole this sorry <3
+  },
+});
+// THIS SHIT GOES TO THE END OR IT MIGHT BREAK ALL THE SHIT
+// THIS SHIT GOES TO THE END OR IT MIGHT BREAK ALL THE SHIT
+// THIS SHIT GOES TO THE END OR IT MIGHT BREAK ALL THE SHIT
