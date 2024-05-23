@@ -16,12 +16,16 @@
   .popupfamily {
     width: 60%; /* Adjust width for smaller screens */
   }
+
+  .draggable{
+    z-index: 999 !important;
+  }
+
   .familypicture {
     width: 350px !important;
   }
   .conwin {
     width: 300px !important;
-    z-index: 999 !important;
   }
 
   .console {
@@ -48,6 +52,10 @@
   .feed-window{
     width: 80% !important;
     margin: 0 auto !important;
+  }
+
+  .icon{
+    z-index: 2 !important;
   }
 }
 
@@ -517,6 +525,7 @@ button:active {
   border-bottom: 1px solid gray;
   box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
   background-color: silver;
+  z-index: 999 !important;
 }
 
 .player-image {
@@ -537,6 +546,7 @@ button:active {
 
 .draggable{
   transition:  box-shadow 0.5s ease;
+  z-index: 999 !important;
 }
 
 .draggable:hover{
