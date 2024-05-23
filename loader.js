@@ -49,11 +49,3 @@ $(document).ready(function() {
   $(document).ready(function() {
     $("#fadeinout").fadeIn(2000).delay(6000).fadeOut(1000);
 });
-
-$(document).ready(function() {
-  setTimeout(function() {
-    $('#LogoLoad').fadeOut(1000, function() {
-      $(this).attr('src', 'loader-logo/new-logo-stk.png').fadeIn(1000);
-    });
-  }, 5000);
-});
