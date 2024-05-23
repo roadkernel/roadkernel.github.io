@@ -2,6 +2,7 @@ if ((navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i
     var script = document.createElement('script');
     script.src = 'mobile-app.js';
     document.body.appendChild(script);
+    alert('Samsung Browser will break the app')
 } else {
     var script = document.createElement('script');
     script.src = 'app.js';
