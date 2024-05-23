@@ -52,6 +52,7 @@
   .feed-window{
     width: 80% !important;
     margin: 0 auto !important;
+    height: 75vh !important;
   }
 
   .icon{
