@@ -74,18 +74,6 @@ $("#closeBtn").on("click", function () {
   $("#popupfamily").fadeOut();
 });
 
-$(".draggable").draggable({
-  handle: ".bar",
-  start: function () {
-    $(this).addClass("dragZ"); 
-    $(this).css({
-      transform: "none",
-      top: $(this).offset().top + "px",
-      left: $(this).offset().left + "px",
-    }); //I stole this sorry <3
-  },
-});
-
 
 $("#app4").on("click", function () {
   $(".music-player").fadeOut();
@@ -363,3 +351,15 @@ function openTab(evt, tabName) {
 
 
 document.getElementById("Feed").style.display = "block";
+
+$(".draggable").draggable({
+  handle: ".bar",
+  start: function () {
+    $(this).addClass("dragZ"); 
+    $(this).css({
+      transform: "none",
+      top: $(this).offset().top + "px",
+      left: $(this).offset().left + "px",
+    }); //I stole this sorry <3
+  },
+});
