@@ -82,7 +82,7 @@ body {
   -webkit-animation: blink 12s infinite;
 }
 
-
+/* 
 @-webkit-keyframes blink {
   20%,
   24%,
@@ -123,7 +123,7 @@ body {
   text-shadow: 0 0 5px #773552, 0 0 15px #773552, 0 0 20px #773552, 0 0 40px #773552, 0 0 60px #773552, 0 0 10px #773552, 0 0 98px #773552;
     color: white;
   }
-}
+} */
 
 .close-button-ui-basic {
   font-size: normal;
