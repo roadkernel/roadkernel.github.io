@@ -66,7 +66,7 @@ $(document).ready(function () {
 });
 
 
-$("#app1").on("click", function () {
+$("#app1").on("click touchstart", function () {
   $("#popupfamily").fadeIn();
 });
 
@@ -103,7 +103,7 @@ $("#app4").on("click", function () {
   $(".icon").css({ top: 0, left: 0 }); 
 });
 
-$("#app3").on("click", function () {
+$("#app3").on("click touchstart", function () {
   $(".noteswindow").fadeIn();
 });
 
@@ -111,7 +111,7 @@ $("#close-notes-ui").on("click", function () {
   $(".noteswindow").fadeOut();
 });
 
-$("#app5").on("click", function () {
+$("#app5").on("click touchstart", function () {
   $(".updates").fadeIn();
 });
 
@@ -131,13 +131,13 @@ function updateUTCTime() {
 setInterval(updateUTCTime, 1000);
 
 
-$(".start").on("click", function () {
+$(".start").on("click touchstart", function () {
   $("#start-window").toggle();
   $(this).toggleClass("active");
 });
 
 
-$(".test-retard").on("click", function () {
+$(".test-retard").on("click touchstart", function () {
   var randomPercentage = Math.floor(Math.random() * 101);
   $("#retard-level").text(randomPercentage);
   $("#rpopup").fadeIn();
@@ -155,7 +155,7 @@ $("#close-btn").on("click", function () {
   $(".test-retard").removeClass("active");
 });
 
-$("#app6").on("click", function () {
+$("#app6").on("click touchstart", function () {
   $(".feed-window").fadeIn();
 });
 
@@ -163,7 +163,7 @@ $("#close-feed").on("click", function () {
   $(".feed-window").fadeOut();
 });
 
-$(".game").on("click", function () {
+$(".game").on("click touchstart", function () {
   $("#tpopup").fadeIn();
   $(this).addClass("active");
 });
