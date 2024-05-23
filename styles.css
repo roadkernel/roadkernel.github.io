@@ -76,7 +76,7 @@ body {
   font-size: calc(20px + 2vh);
   text-shadow: 0 0 5px #773552, 0 0 15px #773552, 0 0 20px #773552, 0 0 40px #773552, 0 0 60px #773552, 0 0 10px #773552, 0 0 98px #773552;
     color: white;
-  font-family: pixel;
+  font-family: pixel !important;
   text-align: center;
   animation: blink 12s infinite;
   -webkit-animation: blink 12s infinite;
