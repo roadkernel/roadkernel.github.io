@@ -13,6 +13,11 @@
 }
 
 @media only screen and (max-width: 768px) {
+  button{
+    font-family: luci !important;
+    font-size: small !important;
+  }
+
   .popupfamily {
     width: 60%; /* Adjust width for smaller screens */
   }

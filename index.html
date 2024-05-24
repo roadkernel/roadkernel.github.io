@@ -8,13 +8,6 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <audio id="backgroundMusic" src="sounds/onload.mp3" preload="auto"></audio>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var audio = document.getElementById("backgroundMusic");
-    audio.volume = 0.1;
-    audio.play();
-  });
-</script>
   </head>
   <body>
     <div id="loading-animation">
@@ -217,9 +210,9 @@
   </div>
   <img src="pics/boombox.png" class="player-image">
 </div>
-<script>
+<!-- <script>
 document.getElementById('audio-player').volume = 0.1;
-</script>
+</script> -->
 <script src="select-user-app.js"></script>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -227,4 +220,5 @@ document.getElementById('audio-player').volume = 0.1;
   <script src="loader.js"></script>
   <!-- redone loader | check /loader.js DONT  CHANGE IT RN -->
   <!-- beware of draggable func breaking the whole js, keep it in the end in case of it failing -->
+  <script src="sound.js"></script>
 </html>
