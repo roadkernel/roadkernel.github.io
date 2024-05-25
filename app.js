@@ -40,6 +40,7 @@ $(document).ready(function () {
   });
   //songs-logic
   var songs = [
+    { name: "Heat Stick", path: "music/heat-stick.mp3" },
     { name: "If We Being Real", path: "music/yeat.mp3" },
     { name: "NO DIDDY", path: "music/diddy.mp3" },
     { name: "Кожура", path: "music/kojura.mp3" },
